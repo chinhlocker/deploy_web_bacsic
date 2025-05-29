@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo Cơ Bản</title>
+  <style>
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="btnClickMe">Click Me</button>
+  <p id="helloText"></p>
+
+  <button id="btnChangeName">Change Name</button>
+  <h1 id="nameDisplay">Phương</h1>
+
+  <button id="toggleModal">Show Modal</button>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <h2>This is a Modal</h2>
+      <button id="closeModal">Close Modal</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
